@@ -1,34 +1,16 @@
-<<<<<<< HEAD
 # ScaleMatch
-=======
-# CorrMatch
->>>>>>> Initial commit
-
 This repository contains the official implementation of the ScaleMatch.
-
 ## Getting Started
-
 
 ### Environment
 Create a new environment and install the requirements:
 ```shell
+conda create -n scalematch python=3.10
+conda activate scalematch
 pip install -r requirements.txt
 ```
-
-<<<<<<< HEAD
-### Dataset:
-=======
-### Pretrained Backbone:
-[ResNet-101]
-```bash
-mkdir pretrained
-```
-Please put the pretrained model under `pretrained` dictionary.
-
-
 ### Dataset:
 Please modify the dataset path in configuration files.*The groundtruth mask ids have already been pre-processed. You may use them directly.*
->>>>>>> Initial commit
 
 Your dataset path may look like:
 ```
