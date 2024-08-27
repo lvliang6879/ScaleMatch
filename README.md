@@ -1,4 +1,4 @@
-# CorrMatch
+# ScaleMatch
 
 This repository contains the official implementation of the ScaleMatch.
 
