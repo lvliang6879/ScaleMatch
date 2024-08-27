@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # ScaleMatch
+=======
+# CorrMatch
+>>>>>>> Initial commit
 
 This repository contains the official implementation of the ScaleMatch.
 
@@ -11,7 +15,20 @@ Create a new environment and install the requirements:
 pip install -r requirements.txt
 ```
 
+<<<<<<< HEAD
 ### Dataset:
+=======
+### Pretrained Backbone:
+[ResNet-101]
+```bash
+mkdir pretrained
+```
+Please put the pretrained model under `pretrained` dictionary.
+
+
+### Dataset:
+Please modify the dataset path in configuration files.*The groundtruth mask ids have already been pre-processed. You may use them directly.*
+>>>>>>> Initial commit
 
 Your dataset path may look like:
 ```
