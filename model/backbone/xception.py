@@ -198,7 +198,7 @@ class Xception(nn.Module):
 def xception(pretrained=True, os=16):
     model = Xception(os=os)
     if pretrained:
-        old_dict = torch.load('pretrained/xception.pth')
+        old_dict = torch.load('./pretrained_weights/xception.pth')
         model_dict = model.state_dict()
         old_dict = {k: v for k, v in old_dict.items() if ('itr' not in k and 'tmp' not in k and 'track' not in k)}
         model_dict.update(old_dict)

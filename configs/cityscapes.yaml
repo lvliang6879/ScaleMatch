@@ -5,7 +5,7 @@ crop_size: 801
 data_root: /dataset/cityscapes/
 # arguments for training
 epochs: 240
-batch_size: 2 # per GPU x 2 GPUs
+batch_size: 1 # per GPU x 2 GPUs
 lr: 0.005
 lr_multi: 1.0
 criterion:
