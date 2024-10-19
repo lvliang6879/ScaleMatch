@@ -48,25 +48,31 @@ Labeled images are sampled from the **original high-quality** training set. Resu
 
 |        Method        | 1/16 (92) | 1/8 (183) |   1/4 (366)    | 1/2 (732) | Full (1464) |
 |:--------------------:|:---------:|:---------:|:--------------:|:---------:|:-----------:|
-|       SupOnly        |   45.1    |   55.3    |      64.8      |   69.7    |    73.5     |
-|         ST++         |   65.2    |   71.0    |      74.6      |   77.3    |    79.1     |
-|        PS-MT         |   65.8    |   69.6    |      76.6      |   78.4    |    80.0     |
-|       UniMatch       |   75.2    |   77.2    |      78.8      |   79.9    |    81.2     |
-| **ScaleMarch (Ours)** | **76.7**  | **78.6**  |    **80.5**    | **82.0**  |  **83.0**   |
-
-### Pascal VOC 2012 augmented
-
-Labeled images are sampled from the **original high-quality** training set. Results are obtained by DeepLabv3+ based on ResNet-101 with training size 513.
-
-|        Method        | 1/16 (92) | 1/8 (183) |   1/4 (366)    | 1/2 (732) | Full (1464) |
-|:--------------------:|:---------:|:---------:|:--------------:|:---------:|:-----------:|
 |     SupBaseline      |   48.3    |   56.2    |      66.6      |   71.3    |    75.4     |
-|         ST++         |   65.2    |   71.0    |      74.6      |   77.3    |    79.1     |
-|        PS-MT         |   65.8    |   69.6    |      76.6      |   78.4    |    80.0     |
 |       UniMatch       |   75.2    |   77.2    |      78.8      |   79.9    |    81.2     |
 |       Allspark       |   76.0    |   78.4    |      79.7      |   80.8    |    82.1     |
 |       RankMatch      |   75.5    |   77.6    |      79.8      |   80.7    |    82.2     |
 | **ScaleMarch (Ours)** | **76.7**  | **78.6**  |    **80.5**    | **82.0**  |  **83.0**   |
+
+
+### Pascal VOC 2012 augmented
+
+Labeled images are sampled from the **original high-quality** training set. Results are obtained by DeepLabv3+ based on ResNet-101 with training size 513, ♢ means using the same split as U2PL.
+
+|        Method        | 1/16 (662) | 1/8 (1323) |   1/4 (366)    |
+|:--------------------:|:---------:|:---------:|:--------------:|
+|     SupBaseline      |   67.2    |   70.6    |      73.8      |
+|       UniMatch       |   78.1    |   78.4    |      79.2      |
+|       RankMatch      |   78.9    |   79.2    |      80.0      |
+|       CorrMatch      |   78.4    |   79.3    |      79.6      |
+| **ScaleMarch (Ours)** | **78.6**  | **79.5**  |    **80.2**    |
+|:--------------------:|:---------:|:---------:|:--------------:|
+|     SupBaseline♢     |   70.6    |   75.0    |      76.5      |
+|         U2PL♢        |   77.2    |   79.0    |      79.3      |
+|       UniMatch       |   80.9    |   81.9    |      80.4      |
+|       Allspark       |   80.6    |   82.0    |      80.9      |
+|       CorrMatch      |   81.3    |   81.9    |      80.9      |
+| **ScaleMarch (Ours)** | **81.5**  | **82.7**  |    **81.1**    |
 
 
 ### Cityscapes
