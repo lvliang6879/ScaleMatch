@@ -42,7 +42,7 @@ To evaluate your checkpoint, please modify ``checkpoint_path`` in [inference.sh]
 
 ## Results
 
-### Pascal VOC 2012
+### Pascal VOC 2012 original
 
 Labeled images are sampled from the **original high-quality** training set. Results are obtained by DeepLabv3+ based on ResNet-101 with training size 513.
 
@@ -52,7 +52,21 @@ Labeled images are sampled from the **original high-quality** training set. Resu
 |         ST++         |   65.2    |   71.0    |      74.6      |   77.3    |    79.1     |
 |        PS-MT         |   65.8    |   69.6    |      76.6      |   78.4    |    80.0     |
 |       UniMatch       |   75.2    |   77.2    |      78.8      |   79.9    |    81.2     |
-| **ScaleMarch (Ours)** | **76.7**  | **78.6**  |    **80.5**    | **82.1**  |  **83.0**   |
+| **ScaleMarch (Ours)** | **76.7**  | **78.6**  |    **80.5**    | **82.0**  |  **83.0**   |
+
+### Pascal VOC 2012 augmented
+
+Labeled images are sampled from the **original high-quality** training set. Results are obtained by DeepLabv3+ based on ResNet-101 with training size 513.
+
+|        Method        | 1/16 (92) | 1/8 (183) |   1/4 (366)    | 1/2 (732) | Full (1464) |
+|:--------------------:|:---------:|:---------:|:--------------:|:---------:|:-----------:|
+|     SupBaseline      |   48.3    |   56.2    |      66.6      |   71.3    |    75.4     |
+|         ST++         |   65.2    |   71.0    |      74.6      |   77.3    |    79.1     |
+|        PS-MT         |   65.8    |   69.6    |      76.6      |   78.4    |    80.0     |
+|       UniMatch       |   75.2    |   77.2    |      78.8      |   79.9    |    81.2     |
+|       Allspark       |   76.0    |   78.4    |      79.7      |   80.8    |    82.1     |
+|       RankMatch      |   75.5    |   77.6    |      79.8      |   80.7    |    82.2     |
+| **ScaleMarch (Ours)** | **76.7**  | **78.6**  |    **80.5**    | **82.0**  |  **83.0**   |
 
 
 ### Cityscapes
@@ -62,7 +76,8 @@ Results are obtained by DeepLabv3+ based on ResNet-101.
 |        Method        | 1/16 (186) | 1/8 (372) | 1/4   (744) | 1/2 (1488) |
 |:--------------------:|:----------:|:---------:|:-----------:|:----------:|
 |       SupOnly        |    65.7    |   72.5    |    74.4     |    77.8    |
-|       UniMatch       |    76.6    |   77.9    |   79.2     |    79.5    |
-| **ScaleMarch (Ours)** |  **77.8**  | **79.4**  |  **80.2**   |  **80.9**  |
+|       UniMatch       |    76.6    |   77.9    |   79.2      |    79.5    |
+|       CorrMatch      |    77.3    |   78.5    |   79.4      |    80.4    |
+| **ScaleMarch (Ours)** |  **77.8**  | **79.4**  |  **80.2**  |  **80.9**  |
 
 
