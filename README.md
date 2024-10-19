@@ -66,13 +66,12 @@ Labeled images are sampled from the **original high-quality** training set. Resu
 |       RankMatch      |   78.9    |   79.2    |      80.0      |
 |       CorrMatch      |   78.4    |   79.3    |      79.6      |
 | **ScaleMarch (Ours)** | **78.6**  | **79.5**  |    **80.2**    |
-|:--------------------:|:---------:|:---------:|:--------------:|
 |     SupBaseline♢     |   70.6    |   75.0    |      76.5      |
 |         U2PL♢        |   77.2    |   79.0    |      79.3      |
-|       UniMatch       |   80.9    |   81.9    |      80.4      |
-|       Allspark       |   80.6    |   82.0    |      80.9      |
-|       CorrMatch      |   81.3    |   81.9    |      80.9      |
-| **ScaleMarch (Ours)** | **81.5**  | **82.7**  |    **81.1**    |
+|       UniMatch♢      |   80.9    |   81.9    |      80.4      |
+|       Allspark♢      |   80.6    |   82.0    |      80.9      |
+|       CorrMatch♢     |   81.3    |   81.9    |      80.9      |
+| **ScaleMarch♢ (Ours)** | **81.5**  | **82.7**  |    **81.1**    |
 
 
 ### Cityscapes
