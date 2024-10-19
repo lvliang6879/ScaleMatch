@@ -63,9 +63,9 @@ Labeled images are sampled from the **original high-quality** training set. Resu
 |:--------------------:|:---------:|:---------:|:--------------:|
 |     SupBaseline      |   67.2    |   70.6    |      73.8      |
 |       UniMatch       |   78.1    |   78.4    |      79.2      |
-|       RankMatch      |   78.9    |   79.2    |      80.0      |
+|       RankMatch      |  **78.9** |   79.2    |      80.0      |
 |       CorrMatch      |   78.4    |   79.3    |      79.6      |
-| **ScaleMarch (Ours)** | **78.6**  | **79.5**  |    **80.2**    |
+| **ScaleMarch (Ours)** |  78.6  | **79.5**  |    **80.2**    |
 |     SupBaseline♢     |   70.6    |   75.0    |      76.5      |
 |         U2PL♢        |   77.2    |   79.0    |      79.3      |
 |       UniMatch♢      |   80.9    |   81.9    |      80.4      |
