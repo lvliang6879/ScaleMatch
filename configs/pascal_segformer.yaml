@@ -1,0 +1,42 @@
+# arguments for dataset
+dataset: pascal
+nclass: 21
+crop_size: 513
+data_root: /data1/users/lvliang/project_123/dataset/VOC2012/
+
+# arguments for training
+epochs: 80
+batch_size: 1 # per GPU x 4 GPUs
+lr: 0.001
+lr_multi: 10.0
+criterion:
+  name: CELoss
+  kwargs:
+    ignore_index: 255
+conf_thresh: 0.95
+amp: True
+
+# arguments for model
+
+img_scales: [0.25, 0.5, 1.5]
+feat_s_scales: [0.75]
+feat_l_scales: [1.25]
+warm_up: 10
+
+model:
+  backbone:
+    type: model.backbone.mit.mit_b5
+    kwargs:
+      embed_dims: [64, 128, 320, 512]
+      # embed_dims: [32, 64, 160, 256]
+      pretrained: True
+  decoder:
+    type: model.semseg.semidec_base.SemiDecoder
+    kwargs:
+      num_heads: 2
+      num_class: 21
+      in_planes: [64, 128, 320, 512]
+      # in_planes: [32, 64, 160, 256]
+      image_size: 513
+      embedding_dim: 768
+      # embedding_dim: 384
