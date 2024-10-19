@@ -59,7 +59,7 @@ Labeled images are sampled from the **original high-quality** training set. Resu
 
 Labeled images are sampled from the **original high-quality** training set. Results are obtained by DeepLabv3+ based on ResNet-101 with training size 513, ♢ means using the same split as U2PL.
 
-|        Method        | 1/16 (662) | 1/8 (1323) |   1/4 (366)    |
+|        Method        | 1/16 (662) | 1/8 (1323) |   1/4 (2646)    |
 |:--------------------:|:---------:|:---------:|:--------------:|
 |     SupBaseline      |   67.2    |   70.6    |      73.8      |
 |       UniMatch       |   78.1    |   78.4    |      79.2      |
